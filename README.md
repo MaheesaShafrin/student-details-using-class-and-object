@@ -1,26 +1,22 @@
 # student-details-using-class-and-object
-Collect and Store Student Details
-import java.util.Scanner;
-public class StudentDetails {
+
+class Person {
+String name;
+int age;
+public void display() {
+System.out.println(&quot;Name: &quot; + name);
+System.out.println(&quot;Age: &quot; + age);
+}
+}
+public class ClassAndObject {
 public static void main(String[] args) {
-Scanner sc = new Scanner(System.in);
-System.out.print("Enter student name: ");
-String name = sc.nextLine();
-System.out.print("Enter student age: ");
-int age = sc.nextInt();
-System.out.print("Enter student grade: ");
-double grade = sc.nextDouble();
-System.out.println("Student Details:");
-System.out.println("Name: "+ name);
-System.out.println("Age: " + age);
-System.out.println("Grade: " + grade);
+Person person = new Person();
+person.name = &quot;Alice&quot;;
+person.age = 25;
+person.display();
 }
 }
+
 Output
-Enter student name: John
-Enter student age: 18
-Enter student grade: 95.5
-Student Details:
-Name: John
-Age: 18
-Grade: 95.5
+Name: Alice
+Age: 25
